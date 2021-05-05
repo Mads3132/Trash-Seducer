@@ -29,7 +29,7 @@ public class AchievementScreen extends AppCompatActivity {
         button11 = (ImageButton)findViewById(R.id.Achievement_storskrald_farve);
         button12 = (ImageButton)findViewById(R.id.Achievement_storskrald_klar);
 
-        //Makes the buttons gray
+        //Makes the buttons grey
         ColorMatrix matrix = new ColorMatrix();
         matrix.setSaturation(0);
         button1.setColorFilter(new ColorMatrixColorFilter(matrix));
