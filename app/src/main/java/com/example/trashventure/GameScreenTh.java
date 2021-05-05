@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -31,6 +32,7 @@ public class GameScreenTh extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_game_screen_th);
 
         //Finds the video in the raw folder
@@ -42,9 +44,9 @@ public class GameScreenTh extends AppCompatActivity {
         videoTh.start(); //Starts the video
 
         //Sets up media controller for pausing the video
-        MediaController mediaController = new MediaController(this);
-        videoTh.setMediaController(mediaController);
-        mediaController.setAnchorView(videoTh);
+        //MediaController mediaController = new MediaController(this);
+        //videoTh.setMediaController(mediaController);
+        //mediaController.setAnchorView(videoTh);
 
         //Makes it so that the buttons can be changed in the code instead of the corresponding xml file
         button1th = (ImageButton)findViewById(R.id.choiceButton1Th);
@@ -97,12 +99,6 @@ public class GameScreenTh extends AppCompatActivity {
     }
 
     public void restaffaldThisted(){
-        AlphaAnimation alphaAnimation = new AlphaAnimation(0.0f, 1.0f);
-        alphaAnimation.setDuration(1000);
-        alphaAnimation.setRepeatCount(1);
-        alphaAnimation.setRepeatMode(Animation.REVERSE);
-        videoTh.startAnimation(alphaAnimation);
-
         videoTh = (VideoView) findViewById(R.id.gameVideoViewTh);
         String videoPath ="android.resource://" + getPackageName() + "/" + R.raw.thisted_restaffald;
         uriTh = Uri.parse(videoPath);

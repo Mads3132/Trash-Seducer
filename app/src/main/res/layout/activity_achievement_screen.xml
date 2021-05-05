@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AchievementScreen">
+
+    <ImageButton
+        android:id="@+id/Achievement_papir"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/papir_og_pap"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_storskrald_farve"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_restaffald"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Achievement_restaffald"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/restaffald"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_storskrald_klar"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_glas"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_papir" />
+
+    <ImageButton
+        android:id="@+id/Achievement_bioaffald"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/bioaffald"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_genbrug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_skyl" />
+
+    <ImageButton
+        android:id="@+id/Achievement_genbrug"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="353dp"
+        android:background="@drawable/genbrug"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_origami" />
+
+    <ImageButton
+        android:id="@+id/Achievement_glas"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/glas"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_skyl"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_metal_og_plast"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_restaffald" />
+
+    <ImageButton
+        android:id="@+id/Achievement_haard_plast"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="353dp"
+        android:background="@drawable/haard_plast"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_origami"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_storskrald" />
+
+    <ImageButton
+        android:id="@+id/Achievement_metal_og_plast"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/metal_og_plast"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_bioaffald"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_glas" />
+
+    <ImageButton
+        android:id="@+id/Achievement_origami"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="353dp"
+        android:background="@drawable/origami"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_genbrug"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_haard_plast" />
+
+    <ImageButton
+        android:id="@+id/Achievement_skyl"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/skyl"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_origami"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_bioaffald"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_storskrald_klar" />
+
+    <ImageButton
+        android:id="@+id/Achievement_storskrald"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="353dp"
+        android:background="@drawable/storskrald"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_haard_plast"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Achievement_storskrald_farve"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/storskrald_farve"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_storskrald"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_storskrald_klar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Achievement_storskrald_klar"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/storskrald_klar"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/Achievement_haard_plast"
+        app:layout_constraintEnd_toStartOf="@+id/Achievement_skyl"
+        app:layout_constraintStart_toEndOf="@+id/Achievement_storskrald_farve" />
+
+    <TextView
+        android:id="@+id/AchievementText"
+        android:layout_width="245dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:text="Achievements!"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

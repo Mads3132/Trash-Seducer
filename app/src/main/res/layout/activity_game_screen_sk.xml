@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar"
     tools:context=".GameScreenSk">
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toRightOf="parent"
@@ -18,7 +21,7 @@
             android:id="@+id/gameVideoViewSk"
             android:layout_width="match_parent"
             android:layout_height="620dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
 
     </FrameLayout>
 
@@ -26,23 +29,26 @@
         android:id="@+id/choiceButton1Sk"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/papir_og_pap"
         android:onClick="button1sk"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choiceButton2Sk"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/choiceButton3Sk"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/restaffald"
         android:onClick="button3sk"
@@ -55,26 +61,32 @@
         android:id="@+id/choiceButton4Sk"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/restaffald"
         android:onClick="button4sk"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choiceButton3Sk" />
 
     <ImageButton
         android:id="@+id/choiceButton2Sk"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/metal_og_plast"
         android:onClick="button2sk"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choiceButton3Sk"
         app:layout_constraintStart_toEndOf="@+id/choiceButton1Sk" />
 
 

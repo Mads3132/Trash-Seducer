@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Trashventure">
-        <activity android:name=".GameScreenTh"></activity>
+        <activity android:name=".AchievementScreen"></activity>
+        <activity android:name=".GameScreenTh" />
         <activity android:name=".GameScreenSk" />
         <activity android:name=".GameScreenAa" />
         <activity android:name=".GameScreenA" />

@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar"
     tools:context=".GameScreenTh">
 
     <FrameLayout
@@ -26,23 +28,26 @@
         android:id="@+id/choiceButton1Th"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/papir_og_pap"
         android:onClick="button1th"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choiceButton2Th"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/choiceButton3Th"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/restaffald"
         android:onClick="button2th"
@@ -55,26 +60,32 @@
         android:id="@+id/choiceButton4Th"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/restaffald"
         android:onClick="button4th"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/choiceButton3Th" />
 
     <ImageButton
         android:id="@+id/choiceButton2Th"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/metal_og_plast"
         android:onClick="button3th"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choiceButton3Th"
         app:layout_constraintStart_toEndOf="@+id/choiceButton1Th" />
 
 

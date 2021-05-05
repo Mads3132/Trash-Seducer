@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -30,6 +31,7 @@ public class GameScreenSk extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_game_screen_sk);
 
         //Finds the video in the raw folder
@@ -41,9 +43,9 @@ public class GameScreenSk extends AppCompatActivity {
         videoSk.start(); //Starts the video
 
         //Sets up media controller for pausing the video
-        MediaController mediaController = new MediaController(this);
-        videoSk.setMediaController(mediaController);
-        mediaController.setAnchorView(videoSk);
+        //MediaController mediaController = new MediaController(this);
+        //videoSk.setMediaController(mediaController);
+        //mediaController.setAnchorView(videoSk);
 
         //Makes it so that the buttons can be changed in the code instead of the corresponding xml file
         button1sk = (ImageButton)findViewById(R.id.choiceButton1Sk);
